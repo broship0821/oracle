@@ -1,0 +1,19 @@
+--SELECT 데이터 검색
+SELECT ID USER_ID, PWD, NAME FROM MEMBER;
+SELECT ID "user id", PWD FROM MEMBER;
+-- 빈 공백을 추가하거나 소문자로 표현하고 싶을땐 ""로 감싸기
+
+--INSERT 데이터 삽입
+INSERT INTO MEMBER(ID, PWD) VALUES('newlec', '111');
+INSERT INTO MEMBER(ID, PWD) VALUES('dragon', '111');
+INSERT INTO MEMBER(ID, PWD) VALUES('test', '111');
+--안 넣은 값은 NULL이 들어감
+
+--UPDATE
+UPDATE MEMBER SET PWD='333', NAME='손오공'
+WHERE ID='dragon';
+
+--DELETE
+DELETE MEMBER WHERE ID='test';
+
+COMMIT;
