@@ -1,0 +1,10 @@
+SELECT * FROM NOTICE;
+
+INSERT INTO NOTICE VALUES(1, 'JDBC란 무엇인가?', 'newlec', 'aaa', SYSDATE, 0,'');
+INSERT INTO NOTICE VALUES(2, 'JDBC2란 무엇인가?', 'newlec', 'aaa', SYSDATE, 0,'');
+INSERT INTO NOTICE VALUES(3, 'JDBC3란 무엇인가?', 'newlec', 'aaa', SYSDATE, 0,'');
+
+DELETE NOTICE WHERE ID = '3';
+
+
+COMMIT;
