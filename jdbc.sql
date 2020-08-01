@@ -1,8 +1,8 @@
 SELECT * FROM NOTICE;
 
-INSERT INTO NOTICE VALUES(1, 'JDBC란 무엇인가?', 'newlec', 'aaa', SYSDATE, 0,'');
-INSERT INTO NOTICE VALUES(2, 'JDBC2란 무엇인가?', 'newlec', 'aaa', SYSDATE, 0,'');
-INSERT INTO NOTICE VALUES(3, 'JDBC3란 무엇인가?', 'newlec', 'aaa', SYSDATE, 0,'');
+INSERT INTO NOTICE VALUES(4, 'JDBC4란 무엇인가?', 'newlec', 'aaa', SYSDATE, 12,'');
+INSERT INTO NOTICE VALUES(5, 'JDBC5란 무엇인가?', 'newlec', 'aaa', SYSDATE, 13,'');
+INSERT INTO NOTICE VALUES(6, 'JDBC6란 무엇인가?', 'newlec', 'aaa', SYSDATE, 14,'');
 
 DELETE NOTICE WHERE ID = '3';
 
