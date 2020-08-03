@@ -66,3 +66,6 @@ WHERE NUM BETWEEN 6 AND 10;
 --괄호를 써서 먼저 결과집합을 만들고, 그리고 NUM으로 출력
 
 COMMIT;
+
+SELECT DISTINCT HIT FROM NOTICE;
+--DISTINCT는 NUMBER만 가능한듯, 그리고 한 컬럼만 가능
