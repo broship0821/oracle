@@ -20,3 +20,23 @@ select * from PERSON where NAME like '이%' and NUM=2;
 select * from PERSON where NAME like '%감%';
 
 commit;
+
+create table "MEMBER" (
+    "NUM" number primary key,
+    "ID" varchar2(20) unique,
+    "PW" varchar2(20),
+    "NAME" varchar2(10),
+    "REGDATE" date
+);
+--시퀀스 생성
+create sequence "MEMBER_SEQ"
+start with 1
+increment by 1
+maxvalue 99999
+nocache
+nocycle
+noorder;
+--system 계정으로 이거 실행시켜줘야됨
+alter user c##scott default tablespace USERS quota unlimited on USERS;
+
+select * from "MEMBER";
